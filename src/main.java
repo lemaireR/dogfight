@@ -1,4 +1,5 @@
-
+import jpu2016.dogfight.controller.DogfightController;
+import jpu2016.dogfight.model.DogfightModel;
 public class main {
 
 	public static void main(String[] args) {

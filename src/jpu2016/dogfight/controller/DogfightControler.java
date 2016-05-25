@@ -1,12 +1,15 @@
 package jpu2016.dogfight.controller;
 
+import jpu2016.dogfight.model.IDogfightModel;
 import jpu2016.dogfight.view.IViewSystem;
 
 public class DogfightControler {
 
 	static private int TIME_SLEEP = 30;
+	public IDogfightModel dogfightModel ;
 	
-	public void DogfightController(IDogfightModel dogfightModel){
+	
+	public DogfightControler(IDogfightModel dogfightModel){
 }
 	
 	public void orderPerform (UserOrder userOrder){

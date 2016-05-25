@@ -5,6 +5,7 @@ import java.util.Observable;
 import jpu2016.dogfight.controller.IOrderPerformer;
 import jpu2016.dogfight.model.IDogfightModel;
 import jpu2016.gameframe.GameFrame;
+import jpu2016.gameframe.IGraphicsBuilder;
 
 public class DogfightView implements IViewSystem, Runnable{
 	
@@ -15,6 +16,7 @@ public class DogfightView implements IViewSystem, Runnable{
 	public DogfightView(IOrderPerformer orderPerformer, IDogfightModel dogfightModel, Observable observable){
 		this.eventPerformer = new EventPerformer(orderPerformer);
 		this.graphicsBuilder = new GraphicsBuilder(dogfightModel);
+		this.gameFrame = new GameFrame("dogfight", this.eventPerformer,this.graphicsBuilder ,observable);
 	}
 	
 	public void run(){

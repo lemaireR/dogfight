@@ -11,9 +11,13 @@ import jpu2016.dogfight.view.GraphicsBuilder;
 
 public class GameFrame extends JFrame implements KeyListener{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 302494905294115089L;
 	private IEventPerformer eventPerformer;
 
-	public GameFrame(String title, IEventPerformer performer, GraphicsBuilder graphicsBuilder, Observable observable){
+	public GameFrame(String title, IEventPerformer performer, IGraphicsBuilder graphicsBuilder, Observable observable){
 		this.eventPerformer = performer;
 		
 	}

@@ -2,11 +2,10 @@ package jpu2016.dogfight.controller;
 
 public interface IUserOrder {
 	
-	public Order IUserOrder(){
+	public Order getOrder();
+	
+	public int getPlayer ();
 		
-	}
-	public int getPlayer (){
-		
-	}
+	
 
 }

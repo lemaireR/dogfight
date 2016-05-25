@@ -1,7 +1,6 @@
 package jpu2016.dogfight.model;
 
 import java.awt.Dimension;
-import java.awt.geom.Area;
 import java.util.ArrayList;
 
 public interface IDogfightModel {

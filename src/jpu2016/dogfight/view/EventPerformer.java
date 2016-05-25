@@ -8,8 +8,10 @@ import jpu2016.gameframe.IEventPerformer;
 
 public class EventPerformer implements IEventPerformer{
 	
+	private IOrderPerformer orderPerformer;
+
 	public EventPerformer(IOrderPerformer orderPerformer){
-		
+		this.orderPerformer = orderPerformer;
 	}
 	
 	public void eventPerformer(KeyEvent keyCode){
